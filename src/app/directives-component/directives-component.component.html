@@ -1,0 +1,11 @@
+<p>directives-component works!</p>
+<ul>
+    <li *ngFor="let n of numbers">
+        <div>
+            {{n}}
+            <button type="button" style="border-width: 5px" (click)="removeNum(n)">
+                removeNum
+            </button>
+        </div>
+    </li>
+</ul>
