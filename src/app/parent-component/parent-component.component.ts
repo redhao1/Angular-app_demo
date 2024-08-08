@@ -11,6 +11,7 @@ export class ParentComponentComponent {
 
   message_parent:string = 'add message here';
   counter_parent:number = 0;
+  show:boolean = true;
 
   receiveCounter($event:number) {
     this.counter_parent = $event;
@@ -20,5 +21,9 @@ export class ParentComponentComponent {
 
   updateText():void {
     this.text_parent = this.child.text_child;
+  }
+
+  toggle():void {
+    this.show = !this.show;
   }
 }

@@ -4,5 +4,6 @@
     <p>The parent counter: {{counter_parent}}</p>
     <button type="button" (click)="updateText()">pass text from child</button>
     <p>The text in child component: {{text_parent}}</p>
-    <app-child-component #child [message_child]= "message_parent" (counterEvent)="receiveCounter($event)"></app-child-component>
+    <button type="button" (click)="toggle()">Toggle the child component below</button>
+    <app-child-component *ngIf="show" #child [message_child]= "message_parent" (counterEvent)="receiveCounter($event)"></app-child-component>
 </div>
