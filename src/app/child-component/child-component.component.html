@@ -1,0 +1,8 @@
+<div>
+    <p>child-component works!</p>
+    <p>The message from child: {{message_child}}</p>
+    <p>The child counter: {{counter_child}}</p>
+    <button type="button" (click)="increaseCounter()">increase</button>
+    <button type="button" (click)="decreaseCounter()">decrease</button>
+    <input type="text" [(ngModel)] = "text_child">
+</div>

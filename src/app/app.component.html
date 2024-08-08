@@ -1,23 +1,2 @@
-<h1>Attribute Directive Examples</h1>
-
-<h2>Pick a highlight color</h2>
-<div>
-  <input type="radio" name="colors" (click)="color='lightgreen'">Green
-  <input type="radio" name="colors" (click)="color='yellow'">Yellow
-  <input type="radio" name="colors" (click)="color='cyan'">Cyan
-</div>
-<p [appHighlight]="color">Highlight me!</p>
-<p [appHighlight]="color" defaultColor="violet">Highlight me with default color!</p>
-
-<hr />
-
-<h2>ngNonBindable</h2>
-<p>Use ngNonBindable to stop evaluation.</p>
-<p ngNonBindable>This should not evaluate: {{ 1 + 1 }}</p>
-
-<h3>ngNonBindable with a directive</h3>
-<p>This will evaluate: {{ 1 +1 }} without highlight.</p>
-<div ngNonBindable [appHighlight]="'yellow'">
-    This is from parent element, it should not evaluate: {{ 1 +1 }}, but will highlight yellow.
-    <p>This is from child element, it should also not evaluate: {{ 1 +1 }}, but will highlight yellow.</p>
-</div>
+<h1>This is Root Component</h1>
+<app-parent-component></app-parent-component>
