@@ -12,6 +12,10 @@ import { DirectivesComponentComponent } from './directives-component/directives-
 import { HighlightDirective } from './highlight.directive';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { TodoTableComponent } from './todo-table/todo-table.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     DirectivesComponentComponent,
     HighlightDirective,
     ParentComponentComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    TodoTableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
