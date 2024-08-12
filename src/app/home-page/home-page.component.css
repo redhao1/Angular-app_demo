@@ -1,0 +1,6 @@
+div {
+    border-width: 5px;
+    border-color: lightgreen;
+    border-style: solid; 
+    padding: 10px;
+}

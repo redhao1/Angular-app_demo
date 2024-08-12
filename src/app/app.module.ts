@@ -16,6 +16,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { TodoTableComponent } from './todo-table/todo-table.component'
 import { HttpClientModule } from '@angular/common/http';
+import { HomePageComponent } from './home-page/home-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReversePipe } from './reverse.pipe';
+import { ModalComponent } from './modal/modal.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { HttpClientModule } from '@angular/common/http';
     HighlightDirective,
     ParentComponentComponent,
     ChildComponentComponent,
-    TodoTableComponent
+    TodoTableComponent,
+    HomePageComponent,
+    PageNotFoundComponent,
+    ReversePipe,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
